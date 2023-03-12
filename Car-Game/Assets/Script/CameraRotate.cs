@@ -13,13 +13,13 @@ public class CameraRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AudioListener.parent = RotateCamera.transform;
-        transform.Rotate(0,0.8f,0,Space.World);
+        //AudioListener.parent = RotateCamera.transform;
+        transform.Rotate(0,1.7f,0,Space.World);
 
         if(Timer.activeSelf == true){
             RotateCamera.SetActive(false);
             CarCamera.SetActive(true);
-            AudioListener.parent = CarCamera.transform;
+            //AudioListener.parent = CarCamera.transform;
         }
     }
 }

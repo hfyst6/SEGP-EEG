@@ -42,13 +42,12 @@ namespace UnityStandardAssets.Vehicles.Car
         public float dopplerLevel = 1;                                              // The mount of doppler effect used in the audio
         public bool useDoppler = true;                                              // Toggle for using doppler
 
-        private AudioSource m_LowAccel; // Source for the low acceleration sounds
-        private AudioSource m_LowDecel; // Source for the low deceleration sounds
-        private AudioSource m_HighAccel; // Source for the high acceleration sounds
-        private AudioSource m_HighDecel; // Source for the high deceleration sounds
-        private bool m_StartedSound; // flag for knowing if we have started sounds
+        public static AudioSource m_LowAccel; // Source for the low acceleration sounds
+        public static AudioSource m_LowDecel; // Source for the low deceleration sounds
+        public static AudioSource m_HighAccel; // Source for the high acceleration sounds
+        public static AudioSource m_HighDecel; // Source for the high deceleration sounds
+        public static bool m_StartedSound; // flag for knowing if we have started sounds
         private CarController m_CarController; // Reference to car we are controlling
-
 
         private void StartSound()
         {
@@ -82,10 +81,12 @@ namespace UnityStandardAssets.Vehicles.Car
             m_StartedSound = false;
         }
 
-
         // Update is called once per frame
         private void Update()
         {
+            if( m_LowAccel == null && m_LowDecel == null && m_HighAccel == null && m_HighDecel == null ){
+                return;
+            }
             // get the distance to main camera
             float camDist = (Camera.main.transform.position - transform.position).sqrMagnitude;
 
