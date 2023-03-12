@@ -358,6 +358,7 @@
 "Assets/Script/CameraStable.cs"
 "Assets/Script/CarControlActive.cs"
 "Assets/Script/CountDown.cs"
+"Assets/Script/FinishRotate.cs"
 "Assets/Script/HalfPtTrigger.cs"
 "Assets/Script/LapTimer.cs"
 -langversion:9.0
