@@ -32,7 +32,11 @@ public class CountDown : MonoBehaviour
         CountDownText.SetActive(true);
         yield return new WaitForSeconds (1);
         CountDownText.SetActive(false);
+        CountDownText.GetComponent<Text> ().text = "GO !";
+        CountDownText.SetActive(true);
         Timer.SetActive(true);
         Carcontrols.SetActive(true);
+        yield return new WaitForSeconds (1);
+        CountDownText.SetActive(false);
     }
 }

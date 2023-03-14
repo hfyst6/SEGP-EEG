@@ -11,11 +11,6 @@ public class FinishRotate : MonoBehaviour
     public AudioSource Finished;
     public AudioSource FinishMusic;
 
-    //public AudioSource lowAccelClip =  CarAudio.m_LowAccel ;
-    //public AudioSource lowDecelClip = CarAudio.m_LowDecel;
-    //public AudioSource highAccelClip = CarAudio.m_HighAccel;
-    //public AudioSource highDecelClip = CarAudio.m_HighDecel;
-
     void OnTriggerEnter(){
         this.GetComponent<BoxCollider>().enabled = false;
         Destroy(CarAudio.m_LowAccel);
@@ -30,7 +25,6 @@ public class FinishRotate : MonoBehaviour
         (Car.GetComponent("CarUserControl") as MonoBehaviour).enabled = false;
         Car.SetActive(true);
         RotateCam.SetActive(true);
-        Finished.Play();
         FinishMusic.Play();
     }
 }
