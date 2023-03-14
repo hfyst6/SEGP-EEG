@@ -14,7 +14,7 @@ public class CameraRotate : MonoBehaviour
     void Update()
     {
         //AudioListener.parent = RotateCamera.transform;
-        transform.Rotate(0,1.7f,0,Space.World);
+        transform.Rotate(0,0.85f,0,Space.World);
 
         if(Timer.activeSelf == true){
             RotateCamera.SetActive(false);
