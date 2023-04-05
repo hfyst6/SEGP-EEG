@@ -1,1 +1,5 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/mountain-race-track/scene1-night easy.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638125062391529609
-    m_Hash: 4168702348
+      ticks: 638144558680861063
+    m_Hash: 3233079447
   m_LockFileStatus:
     m_FilePath: C:/Users/Tan Shao Lin/Desktop/SEGP-EEG/Car-Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638125062391589142
-    m_Hash: 1625128784
+      ticks: 638144558680861063
+    m_Hash: 2799516762
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -347,14 +347,18 @@ m_ResolvedPackages:
     - 1.7.1
     - 1.7.2
     - 1.7.3
+    - 1.7.4
     - 1.8.0
     - 1.8.1
+    - 1.8.2
     compatible:
     - 1.7.2
     - 1.7.3
+    - 1.7.4
     - 1.8.0
     - 1.8.1
-    recommended: 1.7.3
+    - 1.8.2
+    recommended: 1.7.4
     deprecated: []
   dependencies:
   - name: com.unity.modules.director

@@ -445,8 +445,10 @@
 "Assets/Standard Assets/Vehicles/Car/Scripts/CarSelfRighting.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/CarUserControl.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/Mudguard.cs"
+"Assets/Standard Assets/Vehicles/Car/Scripts/Power.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/SkidTrail.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/Suspension.cs"
+"Assets/Standard Assets/Vehicles/Car/Scripts/UpdateSpeed.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/WheelEffects.cs"
 -langversion:9.0
 

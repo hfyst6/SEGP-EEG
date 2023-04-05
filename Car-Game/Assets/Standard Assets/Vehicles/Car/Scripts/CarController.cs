@@ -32,11 +32,13 @@ namespace UnityStandardAssets.Vehicles.Car
         [SerializeField] private float m_MaxHandbrakeTorque;
         [SerializeField] private float m_Downforce = 100f;
         [SerializeField] private SpeedType m_SpeedType;
-        [SerializeField] public static float m_Topspeed = 200;
+        [SerializeField] public static float m_Topspeed = 100;
         [SerializeField] private static int NoOfGears = 5;
         [SerializeField] private float m_RevRangeBoundary = 1f;
         [SerializeField] private float m_SlipLimit;
         [SerializeField] private float m_BrakeTorque;
+
+        public Power pw;
 
         private Quaternion[] m_WheelMeshLocalRotations;
         private Vector3 m_Prevpos, m_Pos;
@@ -182,7 +184,11 @@ namespace UnityStandardAssets.Vehicles.Car
 
                     speed *= 2.23693629f;
                     if (speed > m_Topspeed)
-                        m_Rigidbody.velocity = (m_Topspeed/2.23693629f) * m_Rigidbody.velocity.normalized;
+                        if(pw.boosting){
+
+                        }else{
+                            m_Rigidbody.velocity = (m_Topspeed/2.23693629f) * m_Rigidbody.velocity.normalized;
+                        }
                     break;
 
                 case SpeedType.KPH:
