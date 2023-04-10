@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Collectables\CollectableControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Collectables\LevelDistance.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player\PlayerMove.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\PlayerMove.cs" Line="24" Column="2" />
       <File FileName="Assets\Scripts\Environment\LevelBoundary.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Environment\GenerateLevels.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Collectables\CollectCoin.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Collectables\CollectableControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Collectables\CollectCoin.cs" Line="11" Column="31" />
+      <File FileName="Assets\Scripts\Collectables\CollectableControl.cs" Line="13" Column="2" />
+      <File FileName="Assets\Scripts\Collectables\LevelDistance.cs" Line="24" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
