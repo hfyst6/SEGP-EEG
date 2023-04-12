@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Collectables\CollectCoin.cs" />
      <Compile Include="Assets\Scripts\Collectables\CollectableControl.cs" />
      <Compile Include="Assets\Scripts\Collectables\LevelDistance.cs" />
+     <Compile Include="Assets\Scripts\Collectables\ObstacleCollison.cs" />
      <Compile Include="Assets\Scripts\Collectables\RotateObj.cs" />
      <Compile Include="Assets\Scripts\Environment\GenerateLevels.cs" />
      <Compile Include="Assets\Scripts\Environment\LevelBoundary.cs" />
