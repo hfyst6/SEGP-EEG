@@ -50,6 +50,7 @@ public class PlayerMove : MonoBehaviour {
 		yield return new WaitForSeconds (0.45f);
 		isJumping = false;
 		comingDown = false;
+		transform.position = new Vector3 (transform.position.x, 1.5f, transform.position.z);
 		playerObject.GetComponent<Animator> ().Play ("Standard Run");
 	}
 }
