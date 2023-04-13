@@ -8,12 +8,37 @@ public class PlayerMove : MonoBehaviour {
 	public bool isJumping = false;
 	public bool comingDown = false;
 	static public bool canMove = false;
+	public bool isMoving = true;
 	public GameObject playerObject;
+
+	public float inputValue = 0.0f;
+	public float timeElapsed = 0.0f;
+	public float timeToChangeInput = 2.0f;
+	public float threshold = 0.2f;
 
 
 	void Update () {
-		transform.Translate (Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
+		// Update time elapsed
+		timeElapsed += Time.deltaTime;
+
+		// Generate a new input value every 2 seconds
+		if (timeElapsed >= timeToChangeInput)
+		{
+			inputValue = Random.Range(0.0f, 1.0f);
+			timeElapsed = 0.0f;
+		}
+
+		if (inputValue < threshold) {
+			isMoving = false;
+		} else {
+			isMoving = true;
+		}
+		
 		if (canMove == true) {
+			if (isMoving) {
+				transform.Translate (Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
+			}
+
 			if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) {
 				// check first if the player is within the game boundary, if so he can move left
 				if (this.gameObject.transform.position.x > LevelBoundary.leftSide) {
