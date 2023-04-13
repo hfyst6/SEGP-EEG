@@ -57,6 +57,8 @@
      <Compile Include="Assets\Scripts\Environment\LevelBoundary.cs" />
      <Compile Include="Assets\Scripts\Environment\LevelStarter.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
+     <None Include="Assets\MobileDependencyResolver\Editor\mobile-dependency-resolver.txt" />
+     <None Include="Assets\Editor\MediationAdapterDependencies.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Hub/Editor/5.6.5f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
