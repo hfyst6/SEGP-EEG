@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour {
 	public float moveSpeed = 4;
+	public float defaultMoveSpeed = 4;
 	public float leftRightSpeed = 4;
 	public bool isJumping = false;
 	public bool comingDown = false;
@@ -11,10 +13,15 @@ public class PlayerMove : MonoBehaviour {
 	public bool isMoving = false;
 	public GameObject playerObject;
 
+	public Text status;
+
 	public float inputValue = 0.0f;
 	public float timeElapsed = 0.0f;
 	public float timeToChangeInput = 2.0f;
-	public float threshold = 0.2f;
+	public float slowThreshold = 0.2f;
+	public float stopThreshold = 0.05f;
+
+	public int count = 0;
 
 	void Start(){
 		playerObject.GetComponent<Animator> ().Play ("Idle");
@@ -25,24 +32,41 @@ public class PlayerMove : MonoBehaviour {
 		if (canMove == true) {
 			// Update time elapsed
 			timeElapsed += Time.deltaTime;
+			
+			
+			leftRightSpeed = (int) (count / 10) + defaultMoveSpeed;
 
 			// Generate a new input value every 2 seconds
 			if (timeElapsed >= timeToChangeInput)
 			{
 				inputValue = Random.Range(0.0f, 1.0f);
 				timeElapsed = 0.0f;
+				count ++ ;
 
-				if (inputValue < threshold) {
+				if (inputValue < stopThreshold) {
+					status.GetComponent<Text>().text = "Stop";
 					if (!isJumping) {
 						playerObject.GetComponent<Animator> ().Play ("Idle");
 					}
 					isMoving = false;
 
 				} else {
-					if (!isJumping) {
-						playerObject.GetComponent<Animator> ().Play ("Standard Run");
+					if (inputValue < slowThreshold){
+						status.GetComponent<Text>().text = "Slow";
+						if (!isJumping) {
+							playerObject.GetComponent<Animator> ().Play ("Standard Run");
+						}
+						isMoving = true;
+						moveSpeed = ((int) (count / 5) + defaultMoveSpeed) / 2;
+					} else {
+						status.GetComponent<Text>().text = "Normal";
+						if (!isJumping) {
+							playerObject.GetComponent<Animator> ().Play ("Standard Run");
+						}
+						isMoving = true;
+						moveSpeed = (int) (count / 5) + defaultMoveSpeed;
 					}
-					isMoving = true;
+					
 				}
 			}
 				
