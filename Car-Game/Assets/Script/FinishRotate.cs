@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.Vehicles.Car;
 
 public class FinishRotate : MonoBehaviour
@@ -10,6 +11,7 @@ public class FinishRotate : MonoBehaviour
     public GameObject Timer;
     public AudioSource Finished;
     public AudioSource FinishMusic;
+    public GameObject display;
 
     void OnTriggerEnter(){
         this.GetComponent<BoxCollider>().enabled = false;
@@ -26,5 +28,6 @@ public class FinishRotate : MonoBehaviour
         Car.SetActive(true);
         RotateCam.SetActive(true);
         FinishMusic.Play();
+        display.SetActive(true);
     }
 }

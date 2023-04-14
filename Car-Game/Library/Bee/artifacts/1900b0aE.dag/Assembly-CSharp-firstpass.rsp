@@ -438,6 +438,7 @@
 "Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneUserControl4Axis.cs"
 "Assets/Standard Assets/Vehicles/Aircraft/Scripts/JetParticleEffect.cs"
 "Assets/Standard Assets/Vehicles/Aircraft/Scripts/LandingGear.cs"
+"Assets/Standard Assets/Vehicles/Car/Scripts/BrainWaves.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/BrakeLight.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/CarAIControl.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/CarAudio.cs"
@@ -445,8 +446,10 @@
 "Assets/Standard Assets/Vehicles/Car/Scripts/CarSelfRighting.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/CarUserControl.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/Mudguard.cs"
+"Assets/Standard Assets/Vehicles/Car/Scripts/Power.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/SkidTrail.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/Suspension.cs"
+"Assets/Standard Assets/Vehicles/Car/Scripts/UpdateSpeed.cs"
 "Assets/Standard Assets/Vehicles/Car/Scripts/WheelEffects.cs"
 -langversion:9.0
 
