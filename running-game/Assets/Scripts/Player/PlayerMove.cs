@@ -16,25 +16,32 @@ public class PlayerMove : MonoBehaviour {
 	public float timeToChangeInput = 2.0f;
 	public float threshold = 0.2f;
 
+	void Start(){
+		playerObject.GetComponent<Animator> ().Play ("Idle");
+	}
 
 	void Update () {
-		// Update time elapsed
-		timeElapsed += Time.deltaTime;
-
-		// Generate a new input value every 2 seconds
-		if (timeElapsed >= timeToChangeInput)
-		{
-			inputValue = Random.Range(0.0f, 1.0f);
-			timeElapsed = 0.0f;
-		}
-
-		if (inputValue < threshold) {
-			isMoving = false;
-		} else {
-			isMoving = true;
-		}
 		
 		if (canMove == true) {
+			// Update time elapsed
+			timeElapsed += Time.deltaTime;
+
+			// Generate a new input value every 2 seconds
+			if (timeElapsed >= timeToChangeInput)
+			{
+				inputValue = Random.Range(0.0f, 1.0f);
+				timeElapsed = 0.0f;
+
+				if (inputValue < threshold) {
+					playerObject.GetComponent<Animator> ().Play ("Idle");
+					isMoving = false;
+
+				} else {
+					playerObject.GetComponent<Animator> ().Play ("Standard Run");
+					isMoving = true;
+				}
+			}
+				
 			if (isMoving) {
 				transform.Translate (Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
 			}
