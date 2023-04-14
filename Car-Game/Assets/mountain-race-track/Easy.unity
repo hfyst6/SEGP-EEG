@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1034484023}
-  m_IndirectSpecularColor: {r: 0.50024277, g: 0.54958606, b: 0.592158, a: 1}
+  m_IndirectSpecularColor: {r: 0.5002321, g: 0.549568, b: 0.592148, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3256,7 +3256,7 @@ GameObject:
   - component: {fileID: 51591386}
   - component: {fileID: 51591385}
   - component: {fileID: 51591384}
-  - component: {fileID: 51591383}
+  - component: {fileID: 51591387}
   m_Layer: 0
   m_Name: RotateCube
   m_TagString: Untagged
@@ -3280,22 +3280,6 @@ Transform:
   m_Father: {fileID: 1945968674}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &51591383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51591381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06492b46db8a11047b774b2deab92b3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CarCamera: {fileID: 5615302}
-  RotateCamera: {fileID: 517433857}
-  Timer: {fileID: 1499857862}
-  AudioListener: {fileID: 2140103752}
 --- !u!65 &51591384
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3367,6 +3351,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 51591381}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &51591387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51591381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 078d3fc6a1bb1674da6a53a9fc4567e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CarCamera: {fileID: 581188649}
+  RotateCamera: {fileID: 51591381}
+  Timer: {fileID: 665610417}
+  AudioListener: {fileID: 0}
 --- !u!4 &52399633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4244701375105762, guid: fa2c57d3f28a5e6419393e8bc3eeb32a, type: 3}
@@ -4891,8 +4891,8 @@ MonoBehaviour:
   GetReady: {fileID: 2140103751}
   Timer: {fileID: 1499857862}
   Carcontrols: {fileID: 1196805049}
-  nitruseffect1: {fileID: 244471359}
-  nitruseffect2: {fileID: 432766937}
+  nitruseffect1: {fileID: 2001368767}
+  nitruseffect2: {fileID: 2001368767}
 --- !u!4 &88917683 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4244701375105762, guid: fa2c57d3f28a5e6419393e8bc3eeb32a, type: 3}
@@ -24272,11 +24272,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244284066}
   m_Mesh: {fileID: 4300000, guid: 5f9ee1799e7f21548ba0dd65ac83ea7f, type: 3}
---- !u!198 &244471359 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8301970821032468137, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
-  m_PrefabInstance: {fileID: 1249217926}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &245098492
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28744,12 +28739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3aca7b45953ee642beb7779661a54a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Car: {fileID: 1821205279}
-  RotateCam: {fileID: 517433857}
-  Timer: {fileID: 1499857862}
-  Finished: {fileID: 1380147273}
-  FinishMusic: {fileID: 1537915700}
-  display: {fileID: 1910890782}
 --- !u!1001 &338630033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34102,11 +34091,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430063299}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!198 &432766937 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 4842003245996717195, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
-  m_PrefabInstance: {fileID: 1249217926}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &432772791 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1667978803413412, guid: fa2c57d3f28a5e6419393e8bc3eeb32a, type: 3}
@@ -84137,16 +84121,16 @@ PrefabInstance:
       objectReference: {fileID: 1945968679}
     - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
       propertyPath: nitruseffect1
       value: 
-      objectReference: {fileID: 244471359}
+      objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
       propertyPath: nitruseffect2
       value: 
-      objectReference: {fileID: 432766937}
+      objectReference: {fileID: 0}
     - target: {fileID: 11400024, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
       propertyPath: RotateCam
       value: 
@@ -124133,8 +124117,8 @@ MonoBehaviour:
   cam: {fileID: 5615306}
   boosting: 0
   nitrusValue: 0
-  nitruseffect1: {fileID: 244471359}
-  nitruseffect2: {fileID: 432766937}
+  nitruseffect1: {fileID: 0}
+  nitruseffect2: {fileID: 0}
 --- !u!54 &1945968683 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 5400000, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
@@ -127545,6 +127529,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999581581}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!198 &2001368767 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19800000, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+  m_PrefabInstance: {fileID: 1249217926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2002173798
 PrefabInstance:
   m_ObjectHideFlags: 0
