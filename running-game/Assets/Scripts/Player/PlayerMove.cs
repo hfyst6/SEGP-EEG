@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour {
-	public float moveSpeed = 10;
+	public float moveSpeed = 4;
 	public float leftRightSpeed = 4;
 	public bool isJumping = false;
 	public bool comingDown = false;
 	static public bool canMove = false;
-	public bool isMoving = true;
+	public bool isMoving = false;
 	public GameObject playerObject;
 
 	public float inputValue = 0.0f;
@@ -33,11 +33,15 @@ public class PlayerMove : MonoBehaviour {
 				timeElapsed = 0.0f;
 
 				if (inputValue < threshold) {
-					playerObject.GetComponent<Animator> ().Play ("Idle");
+					if (!isJumping) {
+						playerObject.GetComponent<Animator> ().Play ("Idle");
+					}
 					isMoving = false;
 
 				} else {
-					playerObject.GetComponent<Animator> ().Play ("Standard Run");
+					if (!isJumping) {
+						playerObject.GetComponent<Animator> ().Play ("Standard Run");
+					}
 					isMoving = true;
 				}
 			}
@@ -83,6 +87,11 @@ public class PlayerMove : MonoBehaviour {
 		isJumping = false;
 		comingDown = false;
 		transform.position = new Vector3 (transform.position.x, 1.5f, transform.position.z);
-		playerObject.GetComponent<Animator> ().Play ("Standard Run");
+
+		if (isMoving) {
+			playerObject.GetComponent<Animator> ().Play ("Standard Run");
+		} else {
+			playerObject.GetComponent<Animator> ().Play ("Idle");
+		}
 	}
 }
