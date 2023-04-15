@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
+<<<<<<< Updated upstream
   m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+>>>>>>> Stashed changes
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1013,7 +1017,11 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+<<<<<<< Updated upstream
           m_IntArgument: 5
+=======
+          m_IntArgument: 7
+>>>>>>> Stashed changes
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -1291,7 +1299,10 @@ GameObject:
   - component: {fileID: 200003179}
   - component: {fileID: 200003178}
   - component: {fileID: 200003177}
+<<<<<<< Updated upstream
   - component: {fileID: 200003180}
+=======
+>>>>>>> Stashed changes
   m_Layer: 5
   m_Name: StartGame
   m_TagString: Untagged
@@ -1364,16 +1375,27 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< Updated upstream
       - m_Target: {fileID: 200003180}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: ChangeTo
         m_Mode: 3
+=======
+      - m_Target: {fileID: 1777071699}
+        m_TargetAssemblyTypeName: startgame, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+>>>>>>> Stashed changes
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+<<<<<<< Updated upstream
           m_StringArgument: 
+=======
+          m_StringArgument: Persistent
+>>>>>>> Stashed changes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &200003178
@@ -1414,6 +1436,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200003175}
   m_CullTransparentMesh: 1
+<<<<<<< Updated upstream
 --- !u!114 &200003180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1426,6 +1449,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea73b8cde60aea4d97c2ba50244eb58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> Stashed changes
 --- !u!1 &233526921
 GameObject:
   m_ObjectHideFlags: 0
@@ -3792,7 +3817,10 @@ GameObject:
   - component: {fileID: 884577948}
   - component: {fileID: 884577947}
   - component: {fileID: 884577946}
+<<<<<<< Updated upstream
   - component: {fileID: 884577949}
+=======
+>>>>>>> Stashed changes
   m_Layer: 5
   m_Name: Jumping game
   m_TagString: Untagged
@@ -3864,6 +3892,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 884577947}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< Updated upstream
       m_Calls:
       - m_Target: {fileID: 884577949}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
@@ -3877,6 +3906,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+=======
+      m_Calls: []
+>>>>>>> Stashed changes
 --- !u!114 &884577947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3915,6 +3947,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884577944}
   m_CullTransparentMesh: 1
+<<<<<<< Updated upstream
 --- !u!114 &884577949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3927,6 +3960,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea73b8cde60aea4d97c2ba50244eb58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> Stashed changes
 --- !u!1 &896031346
 GameObject:
   m_ObjectHideFlags: 0
