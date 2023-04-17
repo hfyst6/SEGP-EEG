@@ -5,9 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonOption : MonoBehaviour
 {
-    public void Back() {
-        SceneManager.LoadScene(0);
-    }
     public void EasyTrack(){
         SceneManager.LoadScene(1);
     }

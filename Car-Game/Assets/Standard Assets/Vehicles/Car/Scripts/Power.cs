@@ -16,9 +16,7 @@ public class Power : MonoBehaviour
     void Update()
     {
         if(!boosting && nitrusValue <= 10){
-            if(BrainWaves.value > 0.4f){
-                nitrusValue += (nitrusValue >= 10) ? (10 - nitrusValue) : Time.deltaTime/2;
-            }
+            nitrusValue += (nitrusValue >= 10) ? (10 - nitrusValue) : Time.deltaTime/2;
         }else{
             nitrusValue -= (nitrusValue <= 0) ? 0 : Time.deltaTime*1.5f;
         }

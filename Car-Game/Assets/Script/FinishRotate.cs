@@ -12,10 +12,8 @@ public class FinishRotate : MonoBehaviour
     public AudioSource Finished;
     public AudioSource FinishMusic;
     public GameObject display;
-    public GameObject Back;
 
     void OnTriggerEnter(){
-        Back.SetActive(true);
         this.GetComponent<BoxCollider>().enabled = false;
         Destroy(CarAudio.m_LowAccel);
         Destroy(CarAudio.m_LowDecel);
